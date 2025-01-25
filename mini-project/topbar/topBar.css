@@ -1,0 +1,155 @@
+.topBar {
+  background-color: hwb(0 100% 0%);
+}
+
+/* ------------- Times --------------- */
+.topBar .flag {
+  width: 15px;
+}
+
+.topBar .time {
+  font-weight: bold;
+  color: #333;
+}
+
+.topBar .flags {
+  text-align: end;
+}
+
+.topBar .time img {
+  width: 20px;
+}
+
+@media (max-width: 992px) {
+  .topBar .time {
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topBar .time {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .topBar .flags {
+    text-align: center;
+  }
+  .topBar .flags img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .topBar .time {
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+  }
+}
+
+/* ===================== topBar Space Line ==================== */
+.topBar .topBarSpaceLine-1 {
+  height: 14px;
+  background-color: red;
+}
+
+.topBar .topBarSpaceLine-2 {
+  height: 11px;
+  background-color: green;
+}
+
+/* ======================== topBarBrand Line ======================== */
+/* ------------- topBarTimes --------------- */
+.topBar .flag {
+  width: 15px;
+}
+
+.topBar .topBarTimeBox {
+  width: 45%;
+  font-size: 20px;
+  text-align: start;
+}
+
+.topBar .topBarTimeBox .timePlace {
+  border-bottom: 2px solid #8a8a8a;
+  font-size: 20px;
+  width: auto;
+  text-align: start;
+}
+
+.topBar .topBarTimes .city-name {
+  text-align: start;
+}
+
+.topBar .time {
+  font-weight: bold;
+  color: #333;
+}
+
+.topBar .topBarFlags {
+  text-align: end;
+}
+
+.topBar .topBarFlags img {
+  width: 200px;
+}
+
+@media (max-width: 992px) {
+  .topBar .topBarTimes img {
+    width: 15px;
+  }
+  .topBar .topBarTimes .city-name {
+    text-align: start;
+    font-size: 15px;
+  }
+  .topBar .time {
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topBar .topBarTimes img {
+    width: 18px;
+  }
+  .topBar .topBarTimes .city-name {
+    text-align: start;
+    font-size: 18px;
+  }
+  .topBar .time {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .topBar .topBarFlags {
+    text-align: center;
+  }
+  .topBar .topBarFlags img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .topBar .topBarTimes img {
+    width: 10px;
+  }
+  .topBar .topBarTimes .city-name {
+    text-align: start;
+    font-size: 14px;
+  }
+  .topBar .time {
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+  }
+}

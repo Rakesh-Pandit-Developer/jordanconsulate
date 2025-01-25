@@ -1,0 +1,151 @@
+.footer {
+    background-color: #2d2f36;
+    color: #ffffff;
+    padding: 40px 20px;
+    width: auto;
+    margin-right: 0;
+  }
+  .footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fa0000;
+    font-weight: bold;
+  }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #07c700;
+  }
+
+  .footer .icon {
+    padding: 2px 3px;
+    border-radius: 5px;
+  }
+  
+  .footer .icon.facebook{
+    color: #3b5998; /* Facebook color */
+    background-color: #c5c5c5;
+  }
+  
+  .footer .icon.instagram{
+    color: #e1306c; /* Instagram color */
+    background-color: #c5c5c5;
+  }
+  
+  .footer .icon.youtube{
+    color: #ff0000; /* YouTube color */
+    background-color: #c5c5c5;
+  }
+  
+  .footer .icon.whatsapp{
+    color: #25d366; /* WhatsApp color */
+    background-color: #c5c5c5;
+  }
+   
+  
+  .footer .icon.facebook:hover {
+    color: #fff; /* Facebook color */
+    background-color: #3b5998;
+  }
+  
+  .footer .icon.instagram:hover {
+    color: #fff; /* Instagram color */
+    background-color: #e1306c;
+  }
+  
+  .footer .icon.youtube:hover {
+    color: #fff; /* YouTube color */
+    background-color: #ff0000;
+  }
+  
+  .footer .icon.whatsapp:hover {
+    color: #fff; /* WhatsApp color */
+    background-color: #25d366;
+  }
+   
+  .footer .office-details {
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .footer .btn-contact {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    background-color: #4b4b4b;
+    color: #dcdcdc;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .footer .btn-contact:hover {
+    background-color: #282828;
+    color: #ffffff;
+  }
+  .footer .copyright {
+    background-color: #23272b;
+    text-align: center;
+    padding: 15px 0;
+    color: #c53939;
+    margin-top: 20px;
+  }
+
+  .footer .copyright a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .footer .copyright a span{
+    color: green;
+  }
+  
+  @media (max-width: 991px) {
+    .footer {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      text-align: center;
+    }
+    .footer .col-md-4 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer .icon {
+    fill: #6c757d;
+    transition: fill 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+    margin: 5px;
+}
+
+.footer .icon:hover {
+    transform: scale(1.1); 
+}
+.footer .facebook:hover {
+    fill: #1877F2; 
+}
+.footer .instagram:hover {
+    fill: #E4405F; 
+}
+.footer .youtube:hover {
+    fill: #FF0000; 
+}
+.footer .whatsapp:hover {
+    fill: #25D366; 
+}
