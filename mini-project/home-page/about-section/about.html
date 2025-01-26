@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="../global.css">
+
+<style>
+            
+/* about section styling */
+.about .sectionTitle::after{
+    content: "Who We Are";
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+@media (max-width: 947px){
+
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .about .about-content .right .text{
+        font-size: 19px;
+    }
+}
+
+
+
+</style>
+
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="sectionTitle">About Us</h2>
+        <div class="about-content sectionContent">
+            <div class="column left">
+                <img src="images/consulate-building.jpeg" alt="Jordan Consulate Kathmandu">
+            </div>
+            <div class="column right">
+                <div class="text">Welcome to the <span>Jordan Consulate</span> in Kathmandu</div>
+                <p>The Jordan Consulate in Kathmandu serves as a vital link between the Kingdom of Jordan and Nepal. Our mission is to strengthen diplomatic relations, facilitate travel, and provide support for Jordanian citizens in Nepal. We are committed to fostering cultural exchange, enhancing trade opportunities, and promoting mutual understanding between the two nations. Whether you are seeking visa assistance, legal services, or information about Jordan, our dedicated team is here to assist you with professionalism and care, <a class="more">read more...</a></p>
+
+                <a class="btn" href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
