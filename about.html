@@ -32,7 +32,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/visa-info.css">
+    <link rel="stylesheet" href="assets/css/about.css">
     
     <!-- Structured Data (JSON-LD) for Local Business/Consulate Schema -->
     <script type="application/ld+json">
@@ -70,7 +70,7 @@
     <!-- Performance and Accessibility -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <link rel="preload" href="assets/css/visa-info.css" as="style">
+    <link rel="preload" href="assets/css/about.css" as="style">
     <link rel="preload" href="assets/images/logo.png" as="image">
     
     <style>
@@ -190,15 +190,15 @@
         </button>
         <ul class="menuList">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" >About Us</a></li>
+          <li><a href="about.html"  class="active">About Us</a></li>
 
           <li class="dropDown">
-            <a href="#" class="dropDownToggle active">
+            <a href="#" class="dropDownToggle">
               Services <i class="fas fa-chevron-down"></i>
             </a>
             <ul class="dropDownMenu">
               <li><a href="services.html">Consular Services</a></li>
-              <li><a href="visa-info.html" class="active">Visa Information</a></li>
+              <li><a href="visa-info.html">Visa Information</a></li>
               <li><a href="apply-form.html">Visa Application</a></li>
             </ul>
           </li>
@@ -220,11 +220,14 @@
 
       <div class="navActions">
         <div class="searchContainer">
-          <input type="text" class="searchInput" placeholder="Search...">
+          <input type="text" class="searchInput" placeholder="Search content...">
           <button class="searchIcon">
             <i class="fas fa-search"></i>
           </button>
         </div>
+        <div class="resultsContainer" id="resultsContainer"></div>
+        
+        
         <button class="menuToggle">
           <i class="fas fa-bars"></i>
         </button>
@@ -236,211 +239,222 @@
   </nav>
     <!-- ================== end navBar ================== -->
 
-    <!-- =============== Main  ================ -->
+    <style>
 
-
-    <header class="hero">
-      <div class="container">
-          <h1>Visa Information</h1>
-          <p>Your gateway to exploring the wonders of Jordan. Discover the visa options available and start your journey today.</p>
+    </style>
+    
+    <main>
+      <div class="hero-section">
+        <h1 class="hero-title">Welcome to the Jordan Consulate in Nepal</h1>
+        <p class="hero-subtitle">Strengthening diplomatic ties and fostering cultural exchange between the Hashemite Kingdom of Jordan and Nepal</p>
       </div>
-  </header>
-
-  <main>
-      <section class="section">
-          <div class="container">
-              <h2 class="section-title">Types of Visas</h2>
-              <div class="visa-types">
-                  <div class="visa-card">
-                      <div class="visa-icon">🏖️</div>
-                      <h3 class="visa-title">Tourist Visa</h3>
-                      <p class="visa-description">Perfect for those looking to explore Jordan's rich history and natural wonders.</p>
-                      <ul class="visa-requirements">
-                          <li>Valid passport</li>
-                          <li>Completed visa application form</li>
-                          <li>Proof of accommodation</li>
-                          <li>Return ticket</li>
-                          <li>Sufficient funds for stay</li>
-                      </ul>
+    
+      <div class="about-container">
+        <!-- About Consulate Section -->
+        <section class="section secConsulate">
+          <div class="max-width">
+            <div class="section-header">
+              <h2 class="section-title">About the Consulate</h2>
+              <p class="section-subtitle">Your Gateway to Jordan in Nepal</p>
+              <div class="divider"></div>
+            </div>
+      
+            <div class="content-grid">
+              <div class="info-card">
+                <h3 class="card-title">Our Mission</h3>
+                <div class="card-content">
+                  <p>The Office of the Honorary Consul of The Hashemite Kingdom of Jordan in Nepal serves as the primary diplomatic representation of Jordan in Nepal. We are dedicated to strengthening bilateral relations and providing comprehensive consular services.</p>
+                  <div class="highlight-box">
+                    <h4>Core Objectives:</h4>
+                    <ul>
+                      <li>Facilitate diplomatic relations between Jordan and Nepal</li>
+                      <li>Provide efficient consular services</li>
+                      <li>Promote cultural understanding</li>
+                      <li>Support business and trade initiatives</li>
+                    </ul>
                   </div>
-                  <div class="visa-card">
-                      <div class="visa-icon">💼</div>
-                      <h3 class="visa-title">Business Visa</h3>
-                      <p class="visa-description">For professionals attending meetings, conferences, or exploring business opportunities in Jordan.</p>
-                      <ul class="visa-requirements">
-                          <li>Valid passport</li>
-                          <li>Completed visa application form</li>
-                          <li>Invitation letter from Jordanian company</li>
-                          <li>Company registration documents</li>
-                          <li>Bank statements</li>
-                      </ul>
-                  </div>
-                  <div class="visa-card">
-                      <div class="visa-icon">🎓</div>
-                      <h3 class="visa-title">Student Visa</h3>
-                      <p class="visa-description">Designed for international students pursuing education in Jordan's prestigious institutions.</p>
-                      <ul class="visa-requirements">
-                          <li>Valid passport</li>
-                          <li>Completed visa application form</li>
-                          <li>Acceptance letter from Jordanian institution</li>
-                          <li>Proof of financial support</li>
-                          <li>Health insurance</li>
-                      </ul>
-                  </div>
-                  <div class="visa-card">
-                      <div class="visa-icon">🏥</div>
-                      <h3 class="visa-title">Medical Visa</h3>
-                      <p class="visa-description">For those seeking medical treatment in Jordan's world-class healthcare facilities.</p>
-                      <ul class="visa-requirements">
-                          <li>Valid passport</li>
-                          <li>Completed visa application form</li>
-                          <li>Medical reports</li>
-                          <li>Confirmation from Jordanian hospital</li>
-                          <li>Proof of financial means for treatment</li>
-                      </ul>
-                  </div>
+                </div>
               </div>
-          </div>
-      </section>
-
-      <section class="section">
-          <div class="container">
-              <h2 class="section-title">Visa Application Process</h2>
-              <div class="process-steps">
-                  <div class="step">
-                      <div class="step-number">1</div>
-                      <div class="step-content">
-                          <h3 class="step-title">Determine Visa Type</h3>
-                          <p>Choose the appropriate visa category based on your purpose of visit to Jordan.</p>
-                      </div>
-                  </div>
-                  <div class="step">
-                      <div class="step-number">2</div>
-                      <div class="step-content">
-                          <h3 class="step-title">Gather Required Documents</h3>
-                          <p>Collect all necessary documents as per the requirements of your chosen visa type.</p>
-                      </div>
-                  </div>
-                  <div class="step">
-                      <div class="step-number">3</div>
-                      <div class="step-content">
-                          <h3 class="step-title">Complete Application Form</h3>
-                          <p>Fill out the visa application form accurately and completely.</p>
-                      </div>
-                  </div>
-                  <div class="step">
-                      <div class="step-number">4</div>
-                      <div class="step-content">
-                          <h3 class="step-title">Pay Visa Fees</h3>
-                          <p>Submit the required visa fees as per the current fee structure.</p>
-                      </div>
-                  </div>
-                  <div class="step">
-                      <div class="step-number">5</div>
-                      <div class="step-content">
-                          <h3 class="step-title">Submit Application</h3>
-                          <p>Submit your completed application along with all required documents to the Jordanian Consulate.</p>
-                      </div>
-                  </div>
-                  <div class="step">
-                      <div class="step-number">6</div>
-                      <div class="step-content">
-                          <h3 class="step-title">Visa Processing</h3>
-                          <p>Wait for the processing of your visa application. Processing times may vary depending on the visa type.</p>
-                      </div>
-                  </div>
-                  <div class="step">
-                      <div class="step-number">7</div>
-                      <div class="step-content">
-                          <h3 class="step-title">Collect Your Visa</h3>
-                          <p>Once approved, collect your visa from the Jordanian Consulate or as directed.</p>
-                      </div>
-                  </div>
+      
+              <div class="info-card">
+                <h3 class="card-title">Our Services</h3>
+                <div class="card-content">
+                  <ul>
+                    <li>Visa processing and information</li>
+                    <li>Document authentication and legalization</li>
+                    <li>Consular assistance for Jordanian citizens</li>
+                    <li>Trade and investment facilitation</li>
+                    <li>Cultural exchange program coordination</li>
+                    <li>Educational cooperation support</li>
+                  </ul>
+                </div>
               </div>
-          </div>
-      </section>
-
-      <section class="section">
-          <div class="container">
-              <h2 class="section-title">Visa Fees</h2>
-              <p>Please note that visa fees are subject to change. The following table provides an overview of the current fee structure:</p>
-              <table class="fees-table">
-                  <thead>
-                      <tr>
-                          <th>Visa Type</th>
-                          <th>Single Entry</th>
-                          <th>Multiple Entry</th>
-                          <th>Processing Time</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>Tourist Visa</td>
-                          <td>$40</td>
-                          <td>$100</td>
-                          <td>3-5 working days</td>
-                      </tr>
-                      <tr>
-                          <td>Business Visa</td>
-                          <td>$60</td>
-                          <td>$150</td>
-                          <td>5-7 working days</td>
-                      </tr>
-                      <tr>
-                          <td>Student Visa</td>
-                          <td>$30</td>
-                          <td>N/A</td>
-                          <td>10-15 working days</td>
-                      </tr>
-                      <tr>
-                          <td>Medical Visa</td>
-                          <td>$50</td>
-                          <td>$120</td>
-                          <td>3-5 working days</td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-      </section>
-
-      <section class="cta-section">
-          <div class="container">
-              <h2 class="cta-title">Ready to Apply for Your Jordan Visa?</h2>
-              <p>Our team is here to assist you throughout the visa application process.</p>
-
-              <li style="list-style: none;">
-                <!-- Modal Trigger Button for Contact Form -->
-                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#visaModal"><i class="bi bi-envelope-paper-fill"></i> Start Your Application</a>
-            </li>
-          </div>
-      </section>
-  </main>
-
-     
-      <!-- Visa Apply Form Modal -->
-      <div class="modal fade" id="visaModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="contactModalLabel"><i class="bi bi-envelope-paper-fill"></i> Visa Apply Form</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <!-- iframe to load external form -->
-              <iframe src="apply-formModal.html" style="width: 100%; height: 500px; border: none;"></iframe>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+              <div class="info-card">
+                <h3 class="card-title">Contact Information</h3>
+                <div class="card-content">
+                  <p>We are here to assist you with any queries regarding Jordan-Nepal relations and consular services.</p>
+                  <div class="highlight-box">
+                    <p><strong>Office Hours:</strong> Sunday to Friday, 9:00 AM - 5:00 PM</p>
+                    <p><strong>Location:</strong>Office of the Honorary Consul, Kathmandu, Nepal</p>
+                    <p><strong>Email:</strong> info@jordanconsulate.org.np</p>
+                    <p><strong>Phone:</strong> +977 985-1007984</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+    
+        <!-- Nepal-Jordan Relations Section -->
+        <section class="section secRelations">
+          <div class="max-width">
+            <div class="section-header">
+              <h2 class="section-title">Nepal-Jordan Relations</h2>
+              <p class="section-subtitle">A Growing Partnership</p>
+              <div class="divider"></div>
+            </div>
+      
+            <div class="stat-grid">
+              <div class="stat-item">
+                <div class="stat-number">1977</div>
+                <div class="stat-label">Diplomatic Relations Established</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Bilateral Agreements</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Annual Visitors</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Cultural Exchange Programs</div>
+              </div>
+            </div>
+      
+            <div class="content-grid">
+              <div class="info-card">
+                <h3 class="card-title">Diplomatic Cooperation</h3>
+                <div class="card-content">
+                  <p>Nepal and Jordan have maintained strong diplomatic ties since establishing relations. Both nations work together in various international forums and support each other on matters of mutual interest.</p>
+                  <div class="highlight-box">
+                    <h4>Key Areas of Cooperation:</h4>
+                    <ul>
+                      <li>Regular high-level diplomatic visits</li>
+                      <li>Mutual support in international forums</li>
+                      <li>Cooperation in regional peace initiatives</li>
+                      <li>Joint efforts in global challenges</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="info-card">
+                <h3 class="card-title">Economic Relations</h3>
+                <div class="card-content">
+                  <p>The economic partnership between Nepal and Jordan continues to grow, encompassing various sectors:</p>
+                  <ul>
+                    <li>Bilateral trade agreements</li>
+                    <li>Investment opportunities</li>
+                    <li>Tourism promotion</li>
+                    <li>Technical cooperation</li>
+                    <li>Labor agreements</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="info-card">
+                <h3 class="card-title">Cultural Exchange</h3>
+                <div class="card-content">
+                  <p>Cultural ties between Nepal and Jordan are strengthened through various initiatives:</p>
+                  <ul>
+                    <li>Educational scholarships</li>
+                    <li>Cultural festivals and exhibitions</li>
+                    <li>Academic cooperation</li>
+                    <li>Art and cultural programs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+        </section>
+    
+        <!-- About Jordan Section -->
+        <section class="section secJordan">
+          <div class="max-width">
+            <div class="section-header">
+              <h2 class="section-title">About Jordan</h2>
+              <p class="section-subtitle">Discover the Hashemite Kingdom</p>
+              <div class="divider"></div>
+            </div>
+      
+            <div class="image-gallery">
+              <div class="gallery-item">
+                <img src="assets/images/Petra.jpg" alt="Petra, Jordan">
+              </div>
+              <div class="gallery-item">
+                <img src="assets/images/AmmanCityscape.jpg" alt="Amman Cityscape">
+              </div>
+              <div class="gallery-item">
+                <img src="assets/images/DeadSea.jpg" alt="Dead Sea">
+              </div>
+            </div>
+      
+            <div class="content-grid">
+              <div class="info-card">
+                <h3 class="card-title">Country Overview</h3>
+                <div class="card-content">
+                  <div class="highlight-box">
+                    <h4>Quick Facts:</h4>
+                    <ul>
+                      <li>Capital: Amman</li>
+                      <li>Population: 10.2 million (2021)</li>
+                      <li>Official Language: Arabic</li>
+                      <li>Currency: Jordanian Dinar (JOD)</li>
+                      <li>Government: Constitutional Monarchy</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="info-card">
+                <h3 class="card-title">Culture & Heritage</h3>
+                <div class="card-content">
+                  <p>Jordan boasts a rich cultural heritage spanning thousands of years:</p>
+                  <ul>
+                    <li>Ancient archaeological sites including Petra</li>
+                    <li>Rich Islamic and Christian history</li>
+                    <li>Traditional Bedouin culture</li>
+                    <li>Modern arts and culture scene</li>
+                    <li>Renowned hospitality</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="info-card">
+                <h3 class="card-title">Modern Jordan</h3>
+                <div class="card-content">
+                  <p>Today's Jordan is a blend of tradition and modernity:</p>
+                  <ul>
+                    <li>Stable and progressive economy</li>
+                    <li>Leading education hub in the Middle East</li>
+                    <li>Advanced healthcare system</li>
+                    <li>Growing technology sector</li>
+                    <li>Popular tourist destination</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+        </section>
       </div>
+    </main>
+    
+    <script>
 
-
-
-
-    <!-- =============== Main  End ================ -->
-
+    </script>
 <!-- =============== Footer ================ -->
     <!-- Footer Section -->
     <footer class="footer">
@@ -533,6 +547,50 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/global.js"></script>
-    <script src="assets/js/visa-info.js"></script>
+    <script src="assets/js/about.js"></script>
+    <script src="assets/js/search.js"></script>
+<script>
+   // JavaScript for search functionality
+ const searchInput = document.querySelector('.searchInput');
+ const resultsContainer = document.getElementById('resultsContainer');
+
+ // All searchable tags
+ const searchableTags = [...document.querySelectorAll('p, a, h1, h2, h3, h4, h5, h6, li, span, div')];
+
+ // Event listener for input change
+ searchInput.addEventListener('input', () => {
+   const query = searchInput.value.toLowerCase();
+   resultsContainer.innerHTML = ''; // Clear previous results
+   resultsContainer.style.display = 'none';
+
+   if (query.trim() === '') return; // Exit if query is empty
+
+   let results = [];
+
+   searchableTags.forEach((tag, index) => {
+     if (tag.textContent.toLowerCase().includes(query)) {
+       results.push({ content: tag.textContent, element: tag, id: index });
+     }
+   });
+
+   if (results.length > 0) {
+     resultsContainer.style.display = 'block';
+     results.forEach(result => {
+       const resultItem = document.createElement('div');
+       resultItem.classList.add('resultItem');
+       resultItem.textContent = result.content;
+
+       // Scroll to the element on click
+       resultItem.addEventListener('click', () => {
+         result.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+         result.element.style.backgroundColor = 'yellow'; // Highlight the element
+         setTimeout(() => (result.element.style.backgroundColor = ''), 2000); // Remove highlight
+       });
+
+       resultsContainer.appendChild(resultItem);
+     });
+   }
+ });
+</script>
 </body>
 </html>
